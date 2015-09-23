@@ -19,7 +19,7 @@ class PageShotter(QtGui.QWidget):
         # print finished
         if finished:
             size = self.webPage.mainFrame().contentsSize()
-
+            
             self.webPage.setViewportSize(QtCore.QSize(size.width(), size.height()))
             img = QtGui.QImage(size, QtGui.QImage.Format_ARGB32)
             painter = QtGui.QPainter(img)
