@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 import sys
+import base64
 from PyQt4 import QtGui, QtCore, QtWebKit
 
 
@@ -18,14 +19,16 @@ class PageShotter(QtGui.QWidget):
         # print finished
         if finished:
             size = self.webPage.mainFrame().contentsSize()
+
             self.webPage.setViewportSize(QtCore.QSize(size.width(), size.height()))
             img = QtGui.QImage(size, QtGui.QImage.Format_ARGB32)
             painter = QtGui.QPainter(img)
             self.webPage.mainFrame().render(painter)
             painter.end()
             mUrl = self.url
-            mUrl = mUrl[7:-1]
-            mUrl.replace('\\', '_')
+            #对url进行base64加密，作为文件名
+            mUrl = base64.encodestring(mUrl)
+            # mUrl.replace('\\', '_')
             path = '/home/zhou/code/' + mUrl + '.png'
             img.save(path)
         else:
