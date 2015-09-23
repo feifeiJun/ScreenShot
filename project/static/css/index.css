@@ -1,0 +1,63 @@
+.body{
+    background-image: url("/background.jpg");
+
+}
+
+
+
+
+.Dlogo{
+    position:relative;
+    top: 100px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.logo {
+    margin: 10px auto;
+    height: 42px;
+    weight:256px;
+    border: olivedrab;
+}
+.Search{
+    position: relative;
+    top:150px;
+    background: bisque;
+    text-align: center;
+}
+.SearchWebF{
+    margin:0 auto;
+    border:sienna;
+}
+.WebSite{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: fantasy;
+}
+.Submit{
+    width: 40px;
+    height: 20px;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+}
+
+@keyframes search {
+
+    from{top:0px;}
+    to{top: 100px;}
+}
+@-webkit-keyframes search {
+
+    from{top:0px;}
+    to{top: 100px;}
+}
+@-o-keyframes  search  {
+    from{top:0px;}
+    to{top: 100px;}
+}

@@ -56,3 +56,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Mac tmp files
+.DS_Store
