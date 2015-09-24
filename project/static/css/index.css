@@ -1,63 +1,67 @@
-.body{
-    background-image: url("/background.jpg");
+body{
+    background-image: url('../background.jpg');
+    background-position: 50% 50%;
+    -webkit-background-size:cover ;
+    /*background: url("/background.jpg") no-repeat center fixed;*/
+    background-size: cover;
 
 }
 
 
 
 
-.Dlogo{
-    position:relative;
-    top: 100px;
-    margin: 0 auto;
+/*body{*/
+    /*background-image:url(../background.jpg);*/
+
+/*}*/
+#Dlogo{
+
+    margin: 5% auto;
+    margin-left: -2%;
     text-align: center;
+    transition: all 0.5s ;
+    /*transition-timing-function: cubic-bezier(0,0,0.25,1);*/
 
 }
 .logo {
     margin: 10px auto;
-    height: 42px;
-    weight:256px;
-    border: olivedrab;
+    height: 62px;
 }
-.Search{
-    position: relative;
-    top:150px;
-    background: bisque;
+#Search{
+
+    margin: -3% auto;
+    transition:all 0.5s ;
+    /*transition-timing-function: cubic-bezier(0,0,0.25,1);*/
     text-align: center;
 }
-.SearchWebF{
-    margin:0 auto;
-    border:sienna;
-}
-.WebSite{
-    width: 200px;
+
+#WebSite{
+    width: 300px;
     height: 40px;
     border-radius: 10px;
     font-size: 30px;
     font-family: fantasy;
 }
-.Submit{
+#Submit{
+    display:inline;
+    position: relative;
+    left:20px;
     width: 40px;
     height: 20px;
+    font-size: medium;
 }
+#ScreenShot{
+    visible:hidden;
+    position:relative;
+    height: 300px;
+    width:300px;
+    top:100px;
+    margin:0 auto;
 
+}
 html, body{
     width: 100%;
     height: 100%;
 
 }
 
-@keyframes search {
-
-    from{top:0px;}
-    to{top: 100px;}
-}
-@-webkit-keyframes search {
-
-    from{top:0px;}
-    to{top: 100px;}
-}
-@-o-keyframes  search  {
-    from{top:0px;}
-    to{top: 100px;}
-}
