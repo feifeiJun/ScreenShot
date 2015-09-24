@@ -1,27 +1,17 @@
 body{
-    background-image: url('../background.jpg');
+    background-image: url('../img/background.jpg');
     background-position: 50% 50%;
-    -webkit-background-size:cover ;
-    /*background: url("/background.jpg") no-repeat center fixed;*/
+    -webkit-background-size:cover;
     background-size: cover;
 
 }
 
-
-
-
-/*body{*/
-    /*background-image:url(../background.jpg);*/
-
-/*}*/
 #Dlogo{
 
     margin: 5% auto;
     margin-left: -2%;
     text-align: center;
-    transition: all 0.5s ;
-    /*transition-timing-function: cubic-bezier(0,0,0.25,1);*/
-
+    transition: margin 0.5s ;
 }
 .logo {
     margin: 10px auto;
@@ -30,8 +20,7 @@ body{
 #Search{
 
     margin: -3% auto;
-    transition:all 0.5s ;
-    /*transition-timing-function: cubic-bezier(0,0,0.25,1);*/
+    transition:margin 0.5s ;
     text-align: center;
 }
 
