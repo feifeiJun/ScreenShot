@@ -16,17 +16,17 @@ Submit.onclick=function(){
     Search.style.margin="1.5% auto";
 
     Capture.style.visible="visible";
-    //Capture.style.border="darkkhaki dashed";
-    //Capture.style.border.radius="5px";
+
 
 
 
     $.ajax({
-            type: "get",
-            url: "",
-            data: WebSite.value,
+            type: "POST",
+            url: "/shoot/",
+            data: {url: WebSite.value},
             success:function(data,staus){
-                $("#ScreenShot").css({"display":"block","backgroundImage":""});
+                url = data.url;
+                $("#ScreenShot").css({"display":"block","background-image": "url('" + url + "')"});
 
             }
         }
