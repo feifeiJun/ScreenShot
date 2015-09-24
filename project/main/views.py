@@ -4,7 +4,7 @@
 #################
 #### imports ####
 #################
-from flask import render_template, Blueprint
+from flask import render_template, Blueprint, request
 import os
 import subprocess
 
@@ -22,7 +22,7 @@ main_blueprint = Blueprint('main', __name__, )
 
 @main_blueprint.route('/')
 def home():
-    return render_template('main/home.html')
+    return render_template('index.html')
 
 
 @main_blueprint.route("/about/")
@@ -32,6 +32,7 @@ def about():
 
 @main_blueprint.route('/shoot/')
 def shoot():
+    dic = request.get_json()
     mUrl = "www.hust.edu.cn"
     path = os.path.dirname(os.path.realpath(__file__)) + "/shoot.py"
     subprocess.check_output("python " + path + " " + mUrl, shell=True)

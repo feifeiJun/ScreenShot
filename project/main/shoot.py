@@ -30,7 +30,8 @@ class PageShotter(QtGui.QWidget):
             #对url进行base64加密，作为文件名
             mUrl = base64.encodestring(mUrl)
             # mUrl.replace('\\', '_')
-            path = os.path.dirname(__file__) + mUrl + '.png'
+            path = '../cache/' + mUrl + '.png'
+            print path
             img.save(path)
         else:
             print u"网页加载失败！"
