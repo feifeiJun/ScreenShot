@@ -1,3 +1,8 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
 body{
     background-image: url('../img/background.jpg');
     background-position: 50% 50%;
@@ -7,21 +12,26 @@ body{
 }
 
 #Dlogo{
-
-    margin: 5% auto;
-    margin-left: -2%;
+    /*margin: 5% auto 2% ;*/
+    /*margin-left: -2%;*/
     text-align: center;
-    transition: margin 0.5s ;
+    transition: all 2s ;
+    position:relative;
+    top:25%;
+    /*left:10%;*/
 }
-.logo {
-    margin: 10px auto;
-    height: 62px;
-}
+
+/*.logo {*/
+    /*margin: 10px auto;*/
+    /*height: 62px;*/
+/*}*/
+
 #Search{
-
-    margin: -3% auto;
-    transition:margin 0.5s ;
+    /*margin: -3% auto;*/
+    transition:all 2s ;
     text-align: center;
+    position:relative;
+    top:30%;
 }
 
 #WebSite{
@@ -31,26 +41,31 @@ body{
     font-size: 30px;
     font-family: fantasy;
 }
+
 #Submit{
-    display:inline;
     position: relative;
     left:20px;
-    width: 40px;
-    height: 20px;
-    font-size: medium;
+    width: 45px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: azure;
+    font-size:medium;
+
 }
+
 #ScreenShot{
-    visible:hidden;
-    position:relative;
-    height: 300px;
-    width:300px;
-    top:100px;
+    display: none;
+    height: 550px;
+    width:750px;
+    /*margin: 15% auto 0%;*/
+    position:absolute;
+    top:35%;
+    left:21%;
     margin:0 auto;
-
+    border:blue dashed;
+    border-radius: 5px;
+    overflow:scroll;
 }
-html, body{
-    width: 100%;
-    height: 100%;
 
-}
+
 
